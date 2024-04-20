@@ -1,0 +1,194 @@
+:root {
+  --event-header-height: 76px;
+  --tournament-header-height: 48px;
+  --top-bar-height: 48px;
+  --breadcrumb-height: 48px;
+  --tournament-breadcrumb-height: 48px;
+  --top-tab-bar-height: 48px;
+  --sports-bar-height: 48px;
+  --layout-padding: 16px;
+
+  --drawer-width: 288px;
+
+  --bottom-sheet-max-height: 85dvh;
+
+  --tip-drawer-event-header-height: 0;
+
+  --user-profile-header-height: 0;
+
+  --system-hover-color: #a394ff1f;
+  --system-focus-color: #a394ff29;
+  --system-disabled-color: #fcfcfc7a;
+
+  --fc-avatar: #A394FF;
+  --fc-tab-indicator: #A394FF;
+  --fc-on-status: #FCFCFC;
+
+  --fc-background: #1B191E;
+  --fc-background-16: #1B191E29;
+  --fc-background-64: #1B191EA3;
+
+  --fc-primary: #A394FF;
+  --fc-primary-0: #A394FF00;
+  --fc-primary-4: #A394FF0A;
+  --fc-primary-8: #A394FF14;
+  --fc-primary-24: #A394FF3D;
+  --fc-primary-48: #A394FF7A;
+  --fc-primary-76: #A394FFC2;
+
+  --fc-text-primary: #FCFCFC;
+  --fc-text-secondary: #fcfcfc7A;
+
+  --fc-on-primary: #1B191E;
+
+  --fc-on-background: #FCFCFC;
+  --fc-on-background-0: #FCFCFC00;
+  --fc-on-background-4: #fcfcfc0A;
+  --fc-on-background-12: #FCFCFC1F;
+  --fc-on-background-16: #FCFCFC29;
+  --fc-on-background-48: #FCFCFC7A;
+  --fc-on-background-64: #FCFCFCA3;
+
+  --fc-surface: #242227;
+  --dark-surface-color-12: #fcfcfc1F;
+
+  --fc-on-surface: #FCFCFC;
+  --fc-on-surface-4: #FCFCFC0A;
+  --fc-on-surface-12: #FCFCFC1F;
+  --fc-on-surface-16: #fcfcfc29;
+  --fc-on-surface-64: #fcfcfcA3;
+
+  --fc-surface-elevated: #2D2B30;
+  --fc-on-surface-elevated: #FCFCFC;
+  --fc-on-surface-elevated-16: #FCFCFC29;
+  --fc-on-surface-elevated-48: #FCFCFC7a;
+
+  --fc-on-surface-elevated-bottom: #A394FF;
+
+  --fc-error: #DB7375;
+  --fc-error-8: #DB737514;
+  --fc-error-16: #DB737529;
+  --fc-error-48: #DB73757A;
+  --fc-warning: #EED861;
+  --fc-warning-48: #EED8617A;
+  --fc-success: #6FD297;
+  --fc-success-48: #6FD2977A;
+  --fc-info: #64B5F6;
+  --fc-info-48: #64B5F67A;
+
+  --grey-color-1: #FBFBFB;
+
+  --fc-bottom-sheet: #3C3841;
+  --fc-on-bottom-sheet: #48434E;
+
+  --dark-preloader: #3F3D42;
+
+  --user-color-red: linear-gradient(135deg, #E57373 0%, #F44336 100%);
+  --user-color-pink: linear-gradient(135deg, #F06292 0%, #E91E63 100%);
+  --user-color-purple: linear-gradient(135deg, #BA68C8 0%, #9C27B0 100%);
+  --user-color-deep-purple: linear-gradient(135deg, #9575CD 0%, #673AB7 100%);
+  --user-color-indigo: linear-gradient(135deg, #7986CB 0%, #3F51B5 100%);
+  --user-color-blue: linear-gradient(135deg, #64B5F6 0%, #2196F3 100%);
+  --user-color-light-blue: linear-gradient(135deg, #4FC3F7 0%, #03A9F4 100%);
+  --user-color-cyan: linear-gradient(135deg, #4DD0E1 0%, #00BCD4 100%);
+  --user-color-teal: linear-gradient(135deg, #4DB6AC 0%, #009688 100%);
+  --user-color-green: linear-gradient(135deg, #81C784 0%, #4CAF50 100%);
+  --user-color-light-green: linear-gradient(135deg, #AED581 0%, #8BC34A 100%);
+  --user-color-lime: linear-gradient(135deg, #DCE775 0%, #D7DC39 100%);
+  --user-color-yellow: linear-gradient(135deg, #FFF176 0%, #FFEB3B 100%);
+  --user-color-amber: linear-gradient(135deg, #FFD54F 0%, #FFC107 100%);
+  --user-color-orange: linear-gradient(135deg, #FFB74D 0%, #FF9800 100%);
+  --user-color-deep-orange: linear-gradient(135deg, #FF8A65 0%, #FF5722 100%);
+  --user-color-brown: linear-gradient(135deg, #A1887F 0%, #795548 100%);
+  --user-color-grey: linear-gradient(135deg, #E0E0E0 0%, #9E9E9E 100%);
+  --user-color-blue-grey: linear-gradient(135deg, #90A4AE 0%, #607D8B 100%);
+
+  --promotion-color-matisse: #1E6FB0;
+  --promotion-color-anakiwa: #A0F1FF;
+  --promotion-color-jaffa: #F59843;
+  --promotion-color-kournikova: #FFEE76;
+  --promotion-color-mint-green: #ACFFB9;
+  --promotion-color-cornflower-lilac: #FFADAE;
+
+  --field-color: #3D7453;
+
+  --tip-publish-date-width: 110px;
+  --tip-outcome-coefficient-width: 120px;
+
+  --user-avatar-size-xs: 16px;
+  --user-avatar-size-s: 20px;
+  --user-avatar-size-m: 28px;
+  --user-avatar-size-l: 36px;
+  --user-avatar-size-xl: 48px;
+}
+
+[data-fc-theme="light"] {
+  --system-hover-color: #a394ff1f;
+  --system-focus-color: #a394ff29;
+  --system-disabled-color: #fcfcfc7a;
+
+  --fc-avatar: #8074D3;
+  --fc-tab-indicator: #FCFCFC;
+  --fc-on-status: #FCFCFC;
+
+  --fc-background: #F2F1F7;
+  --fc-background-16: #FBFAFD29;
+  --fc-background-64: #FBFAFDA3;
+
+  --fc-primary: #685ACB;
+  --fc-primary-0: #685ACB00;
+  --fc-primary-4: #685ACB0A;
+  --fc-primary-8: #685ACB14;
+  --fc-primary-24: #685ACB3D;
+  --fc-primary-48: #685ACB7A;
+  --fc-primary-76: #685ACBC2;
+
+  --fc-text-primary: #1E1D25;
+  --fc-text-secondary: #2B26687A;
+
+  --fc-on-primary: #FBFAFD;
+
+  --fc-on-background: #2B2668;
+  --fc-on-background-0: #2B266800;
+  --fc-on-background-4: #2B26680A;
+  --fc-on-background-12: #2B26681F;
+  --fc-on-background-16: #2B266829;
+  --fc-on-background-48: #2B26687A;
+  --fc-on-background-64: #2B2668A3;
+
+  --fc-surface: #FBFAFD;
+  --dark-surface-color-12: #fcfcfc1F;
+
+  --fc-on-surface: #736F9C;
+  --fc-on-surface-4: #736F9C0A;
+  --fc-on-surface-12: #736F9C1F;
+  --fc-on-surface-16: #736F9C29;
+  --fc-on-surface-64: #736F9CA3;
+
+  --fc-surface-elevated: #685ACB;
+  --fc-on-surface-elevated: #FBFAFD;
+  --fc-on-surface-elevated-16: #FBFAFD29;
+  --fc-on-surface-elevated-48: #FBFAFD7a;
+
+  --fc-on-surface-elevated-bottom: #FBFAFD;
+
+  --fc-error: #DD5557;
+  --fc-error-8: #DD555714;
+  --fc-error-16: #DD555729;
+  --fc-error-48: #DD55577A;
+  --fc-warning: #FAC715;
+  --fc-warning-48: #FAC7157A;
+  --fc-success: #6FD297;
+  --fc-success-48: #6FD2977A;
+  --fc-info: #64B5F6;
+  --fc-info-48: #64B5F67A;
+
+  --field-color: #45A56B;
+
+  --grey-color-1: #FBFBFB;
+
+  --fc-bottom-sheet: #FBFAFD;
+  --fc-on-bottom-sheet: #ECEBF2;
+
+  --dark-preloader: #3F3D42;
+}

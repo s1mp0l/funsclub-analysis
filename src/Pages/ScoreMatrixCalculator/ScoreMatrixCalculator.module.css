@@ -1,0 +1,49 @@
+.scoreMatrix {
+    padding: 32px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.inputContainer {
+    width: 50vw;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    & label {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 2em;
+    }
+
+    & input[type='number'] {
+        font-size: 20px;
+        width: 100%;
+        padding: 8px;
+        margin-right: 10px;
+    }
+
+    & button {
+        padding: 8px 16px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        font-weight: 600;
+    }
+
+    & button:hover {
+        background-color: var(--fc-primary);
+        color: #000;
+    }
+}
+
+.matrixContainer {
+    overflow-x: auto;
+}
