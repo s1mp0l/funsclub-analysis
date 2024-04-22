@@ -1,0 +1,11 @@
+.addSelectedMarketButton {
+    align-self: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    background: var(--fc-primary);
+    color: white;
+    font-size: 60px;
+    font-weight: 700;
+    margin-left: 10px;
+}

@@ -3,6 +3,8 @@ import {CompareFunction} from "./Common";
 export interface Outcome {
   name: string;
   comp: CompareFunction;
+  oddValue?: number;
+  probValue?: number;
 }
 
 const totalHigher = (sum: number): CompareFunction =>
@@ -10,6 +12,9 @@ const totalHigher = (sum: number): CompareFunction =>
 
 const totalLower = (sum: number): CompareFunction =>
   (i, j) => i + j < sum;
+
+const totalExact = (sum: number): CompareFunction =>
+  (i, j) => i + j === sum;
 
 const handicap = (difference: number): CompareFunction =>
   (i, j) => i + difference > j;
@@ -28,7 +33,8 @@ export enum Outcomes {
   AWAY_WIN_OR_DRAW,
   NOT_DRAW,
 
-  // Total Market
+  // Total
+  // Higher
   TOTAL_1H,
   TOTAL_2H,
   TOTAL_3H,
@@ -37,6 +43,7 @@ export enum Outcomes {
   TOTAL_6H,
   TOTAL_7H,
 
+  // Lower
   TOTAL_1L,
   TOTAL_2L,
   TOTAL_3L,
@@ -44,6 +51,17 @@ export enum Outcomes {
   TOTAL_5L,
   TOTAL_6L,
   TOTAL_7L,
+
+
+  // EXACT
+  TOTAL_0E,
+  TOTAL_1E,
+  TOTAL_2E,
+  TOTAL_3E,
+  TOTAL_4E,
+  TOTAL_5E,
+  TOTAL_6E,
+  TOTAL_7E,
 
   // Handicap Market
   HANDICAP_1,
@@ -158,6 +176,40 @@ export const OutcomesDict: Record<Outcomes, Outcome> = {
   [Outcomes.TOTAL_7L]: {
     name: "<7",
     comp: totalLower(7),
+  },
+
+  // Total Exact
+  [Outcomes.TOTAL_0E]: {
+    name: "0",
+    comp: totalExact(0),
+  },
+  [Outcomes.TOTAL_1E]: {
+    name: "1",
+    comp: totalExact(1),
+  },
+  [Outcomes.TOTAL_2E]: {
+    name: "2",
+    comp: totalExact(2),
+  },
+  [Outcomes.TOTAL_3E]: {
+    name: "3",
+    comp: totalExact(3),
+  },
+  [Outcomes.TOTAL_4E]: {
+    name: "4",
+    comp: totalExact(4),
+  },
+  [Outcomes.TOTAL_5E]: {
+    name: "5",
+    comp: totalExact(5),
+  },
+  [Outcomes.TOTAL_6E]: {
+    name: "6",
+    comp: totalExact(6),
+  },
+  [Outcomes.TOTAL_7E]: {
+    name: "7",
+    comp: totalExact(7),
   },
 
   // Гандикап

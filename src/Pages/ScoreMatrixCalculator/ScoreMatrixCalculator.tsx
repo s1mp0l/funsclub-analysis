@@ -1,10 +1,11 @@
-import {memo, useState} from "react";
+import {memo, useEffect, useState} from "react";
 import ScoreMatrixGrid from "../../Components/ScoreMatrixGrid/ScoreMatrixGrid";
 import {getScoreMatrix} from "../../Services/CalculateMarkets/Utils/GetScoreMatrix";
 import {createEmptyMatrix, formatMatrixToPercent} from "../../Shared/Utils/Common";
 import classes from "./ScoreMatrixCalculator.module.css";
-import {MarketOutcomes, MarketNames} from "../../Services/Constants/Markets";
+import {MarketOutcomes, MarketNames, Market} from "../../Services/Constants/Markets";
 import MarketCard from "../../Components/MarketCard/MarketCard";
+import {getXgFromMarkets} from "../../Services/Test/GetXgFromMarkets";
 
 const checkXgValid = (n1: number, n2: number): boolean => {
   if (!isFinite(n1) || !isFinite(n2)) {
@@ -21,6 +22,10 @@ const checkXgValid = (n1: number, n2: number): boolean => {
   }
   return true;
 }
+
+const markets: Market[] = [
+  MarketOutcomes[MarketNames.RESULT_1X2]
+];
 
 const ScoreMatrixCalculator = memo(() => {
   const [homeGoals, setHomeGoals] = useState('');
@@ -40,8 +45,18 @@ const ScoreMatrixCalculator = memo(() => {
     setMatrix(formatMatrixToPercent(newMatrix));
   };
 
+  useEffect(() => {
+    markets[0].outcomes[0].probValue = 0.14754098360655737;
+    markets[0].outcomes[1].probValue = 0.5901639344262295;
+    markets[0].outcomes[2].probValue = 0.2622950819672131;
+
+    markets[0].outcomes[0].oddValue = 4.8;
+    markets[0].outcomes[1].oddValue = 1.2;
+    markets[0].outcomes[2].oddValue = 2.7;
+  }, []);
+
   return (
-    <div className={classes.scoreMatrix}>
+    <div className={classes.contentContainer}>
       <div className={classes.inputContainer}>
         <label>
           Математическое ожидание голов для первой команды:

@@ -1,0 +1,14 @@
+.tabListItem {
+    background: white;
+    border-radius: 4px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+
+    &:hover {
+        background: var(--fc-primary);
+        color: white;
+    }
+}

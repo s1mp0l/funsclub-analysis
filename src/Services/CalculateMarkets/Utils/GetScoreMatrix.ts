@@ -1,12 +1,11 @@
 import {poissonProbability} from "./PoissonProbability";
 import {MAX_TEAM_GOALS_PER_MATCH} from "../../Constants/Common";
 import {calculateMatrixSum} from "../../../Shared/Utils/Common";
+import {getXgFromMarkets} from "../../Test/GetXgFromMarkets";
 
 export function getScoreMatrix(homeExpectedGoals: number, awayExpectedGoals: number): number[][] {
   const maxGoals = MAX_TEAM_GOALS_PER_MATCH;
   const matrix: number[][] = [];
-
-  console.time("matrix")
 
   // Создаем матрицу с нулевыми значениями
   for (let i = 0; i <= maxGoals; i++) {
@@ -27,8 +26,7 @@ export function getScoreMatrix(homeExpectedGoals: number, awayExpectedGoals: num
     }
   }
 
-  console.timeEnd("matrix")
-  console.log(calculateMatrixSum(matrix))
+  console.log(`Matrix sum: ${calculateMatrixSum(matrix)}`)
 
   return matrix;
 }

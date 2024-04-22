@@ -1,0 +1,19 @@
+.selectMarketsContainer {
+    box-sizing: border-box;
+    border-top: 5px dashed var(--fc-primary);
+    border-bottom: 5px dashed var(--fc-primary);
+    background: #333;
+    height: 300px;
+    width: 100%;
+    gap: 8px;
+    padding: 8px 8px 24px 8px;
+    overflow-x: auto;
+}
+
+.selectMarketsContainerInner {
+    display: flex;
+    gap: 8px;
+    height: 100%;
+    flex-wrap: nowrap;
+    width: min-content;
+}

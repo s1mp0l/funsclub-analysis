@@ -4,30 +4,51 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1afb163-764e-439e-9fbc-d3f973bc1ea8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Components/BaseOutcome/BaseOutcome.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/BaseOutcome/BaseOutcome.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/MarketCard/MarketCard.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/MarketCard/MarketCard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/ScoreMatrixGrid/ScoreMatrixGrid.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/ScoreMatrixGrid/ScoreMatrixGrid.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Pages/ScoreMatrixCalculator/ScoreMatrixCalculator.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Pages/ScoreMatrixCalculator/ScoreMatrixCalculator.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Services/CalculateMarkets/Utils/CalculateOutcome.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Services/CalculateMarkets/Utils/GetScoreMatrix.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Services/CalculateMarkets/Utils/PoissonProbability.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Services/Constants/Common.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Services/Constants/Markets.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Services/Constants/Outcomes.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Shared/Styles/Variables.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Shared/Utils/Common.ts" afterDir="false" />
+    <list default="true" id="f1afb163-764e-439e-9fbc-d3f973bc1ea8" name="Changes" comment="feat: init">
+      <change afterPath="$PROJECT_DIR$/src/Components/InputOutcome/InputOutcome.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/InputOutcome/InputOutcome.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/SelectMarkets/AddSelectedMarket/AddSelectedMarketButton.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/SelectMarkets/AddSelectedMarket/AddSelectedMarketButton.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/SelectMarkets/AddSelectedMarketList/AddSelectedMarketList.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/SelectMarkets/AddSelectedMarketList/AddSelectedMarketList.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/SelectMarkets/AddSelectedMartketContainer/AddSelectedMarketContainer.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/SelectMarkets/AddSelectedMartketContainer/AddSelectedMarketContainer.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/SelectMarkets/Model/Model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/SelectMarkets/SelectMarkets.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/SelectMarkets/SelectMarkets.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/SelectMarkets/SelectedMarket/SelectedMarket.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/SelectMarkets/SelectedMarket/SelectedMarket.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Tabs/Model/Model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Tabs/Tab/Tab.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Tabs/Tab/Tab.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Tabs/TabListItem/TabListItem.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Tabs/TabListItem/TabListItem.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Tabs/Tabs.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Tabs/Tabs.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Tabs/TabsList/TabsList.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Tabs/TabsList/TabsList.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Pages/GetFromMerketsPage/GetFromMarketsPage.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Pages/GetFromMerketsPage/GetFromMarketsPage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Pages/MainPage/MainPage.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Pages/MainPage/MainPage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Pages/MainPage/TabsConfig.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Services/CalculateMarkets/Utils/Convertations.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Services/CalculateMarkets/Utils/GetMargin.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Services/Test/GetXgFromMarkets.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Shared/Model/Model.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shared/Styles/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/BaseOutcome/BaseOutcome.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/BaseOutcome/BaseOutcome.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/ScoreMatrixCalculator/ScoreMatrixCalculator.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/ScoreMatrixCalculator/ScoreMatrixCalculator.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/ScoreMatrixCalculator/ScoreMatrixCalculator.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/ScoreMatrixCalculator/ScoreMatrixCalculator.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/CalculateMarkets/Utils/GetScoreMatrix.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/CalculateMarkets/Utils/GetScoreMatrix.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/CalculateMarkets/Utils/PoissonProbability.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/CalculateMarkets/Utils/PoissonProbability.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/Constants/Common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Constants/Common.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/Constants/Markets.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Constants/Markets.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/Constants/Outcomes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Constants/Outcomes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Shared/Styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shared/Styles/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Shared/Utils/Common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shared/Utils/Common.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,27 +71,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/s1mp0l/WebstormProjects/funsclub-analysis/src/Shared/Styles",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "editing.templates",
-    "ts.external.directory.path": "/Users/s1mp0l/WebstormProjects/funsclub-analysis/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/s1mp0l/WebstormProjects/funsclub-analysis/src/Shared/Styles&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editing.templates&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/s1mp0l/WebstormProjects/funsclub-analysis/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/Shared/Styles" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Components/SelectMarkets/Model" />
+      <recent name="$PROJECT_DIR$/src/Components/Tabs/Model" />
       <recent name="$PROJECT_DIR$/src/Services/Constants" />
       <recent name="$PROJECT_DIR$/src/Shared/Styles" />
       <recent name="$PROJECT_DIR$/src" />
@@ -85,11 +108,26 @@
       <option name="presentableId" value="Default" />
       <updated>1713105175648</updated>
       <workItem from="1713105176712" duration="104000" />
-      <workItem from="1713105295016" duration="19679000" />
+      <workItem from="1713105295016" duration="20298000" />
+      <workItem from="1713618656438" duration="15017000" />
+      <workItem from="1713715145746" duration="14179000" />
     </task>
+    <task id="LOCAL-00001" summary="feat: init">
+      <option name="closed" value="true" />
+      <created>1713618110903</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1713618110904</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: init" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: init" />
   </component>
 </project>

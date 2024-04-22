@@ -5,10 +5,13 @@ export enum MarketNames {
   RESULT_12,
   TOTAL_HIGHER,
   TOTAL_LOWER,
+  TOTAL_EXACT,
   HANDICAP,
   ASIAN_HANDICAP_MINUS,
   ASIAN_HANDICAP_PLUS,
 }
+
+export type MarketName = keyof typeof MarketNames;
 
 export interface Market {
   name: string;
@@ -17,7 +20,7 @@ export interface Market {
 
 export const MarketOutcomes: Record<MarketNames, Market> = {
   [MarketNames.RESULT_1X2]: {
-    name: "Результат матча:",
+    name: "Результат матча",
     outcomes: [
       OutcomesDict[Outcomes.HOME_WIN],
       OutcomesDict[Outcomes.AWAY_WIN],
@@ -25,7 +28,7 @@ export const MarketOutcomes: Record<MarketNames, Market> = {
     ],
   },
   [MarketNames.RESULT_12]: {
-    name: "Результат матча (двойной шанс):",
+    name: "Результат матча (двойной шанс)",
     outcomes: [
       OutcomesDict[Outcomes.HOME_WIN_OR_DRAW],
       OutcomesDict[Outcomes.NOT_DRAW],
@@ -33,7 +36,7 @@ export const MarketOutcomes: Record<MarketNames, Market> = {
     ],
   },
   [MarketNames.TOTAL_HIGHER]: {
-    name: "Суммарное количество голов в матче больше:",
+    name: "Суммарное количество голов в матче больше",
     outcomes: [
       OutcomesDict[Outcomes.TOTAL_1H],
       OutcomesDict[Outcomes.TOTAL_2H],
@@ -45,7 +48,7 @@ export const MarketOutcomes: Record<MarketNames, Market> = {
     ],
   },
   [MarketNames.TOTAL_LOWER]: {
-    name: "Суммарное количество голов в матче меньше:",
+    name: "Суммарное количество голов в матче меньше",
     outcomes: [
       OutcomesDict[Outcomes.TOTAL_1L],
       OutcomesDict[Outcomes.TOTAL_2L],
@@ -56,8 +59,21 @@ export const MarketOutcomes: Record<MarketNames, Market> = {
       OutcomesDict[Outcomes.TOTAL_7L],
     ],
   },
+  [MarketNames.TOTAL_EXACT]: {
+    name: "Точное суммарное количество голов в матче",
+    outcomes: [
+      OutcomesDict[Outcomes.TOTAL_0E],
+      OutcomesDict[Outcomes.TOTAL_1E],
+      OutcomesDict[Outcomes.TOTAL_2E],
+      OutcomesDict[Outcomes.TOTAL_3E],
+      OutcomesDict[Outcomes.TOTAL_4E],
+      OutcomesDict[Outcomes.TOTAL_5E],
+      OutcomesDict[Outcomes.TOTAL_6E],
+      OutcomesDict[Outcomes.TOTAL_7E],
+    ],
+  },
   [MarketNames.HANDICAP]: {
-    name: "Команда 1 победит с форой:",
+    name: "Команда 1 победит с форой",
     outcomes: [
       OutcomesDict[Outcomes.HANDICAP_1],
       OutcomesDict[Outcomes.HANDICAP_2],
@@ -65,7 +81,7 @@ export const MarketOutcomes: Record<MarketNames, Market> = {
     ]
   },
   [MarketNames.ASIAN_HANDICAP_MINUS]: {
-    name: "Азиатская фора (-):",
+    name: "Азиатская фора (-)",
     outcomes: [
       OutcomesDict[Outcomes.ASIAN_HANDICAP_MINUS_0_25],
       OutcomesDict[Outcomes.ASIAN_HANDICAP_MINUS_0_5],
@@ -78,7 +94,7 @@ export const MarketOutcomes: Record<MarketNames, Market> = {
     ]
   },
   [MarketNames.ASIAN_HANDICAP_PLUS]: {
-    name: "Азиатская фора (+):",
+    name: "Азиатская фора (+)",
     outcomes: [
       OutcomesDict[Outcomes.ASIAN_HANDICAP_PLUS_0_25],
       OutcomesDict[Outcomes.ASIAN_HANDICAP_PLUS_0_5],

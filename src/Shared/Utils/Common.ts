@@ -39,3 +39,7 @@ export const formatMatrixToPercent = (matrix: number[][]): number[][] => {
     )
   ));
 }
+
+export const createNullArray = (n: number) => (
+  Array.from({ length: n }, () => 0)
+);
